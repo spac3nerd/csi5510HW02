@@ -23,8 +23,9 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				src: [
+					"highcharts.js"
 				],
-				dest: dest + "htmlAnn.js"
+				dest: dest + "hw02.js"
 			}
 		},
 		concatcss: {
@@ -49,14 +50,7 @@ module.exports = function(grunt) {
 					}
 				]
 			}
-		},
-		downloadFiles: {
-			dist: {
-				resources: ["https://cdnjs.cloudflare.com/ajax/libs/highcharts/6.0.7/highcharts.js"],
-				dest: "lib",
-				name: ""
-			}
-		} 
+		}
 	});
 	
 	grunt.loadNpmTasks("grunt-contrib-uglify");
@@ -66,7 +60,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks("grunt-contrib-copy");
 	
 	grunt.registerTask("default", ["debug"]);
-	grunt.registerTask("init", ["concat", "concatcss", "copy", "jshint"]);
+	grunt.registerTask("init", ["downloadFiles"]);
 	grunt.registerTask("debug", ["concat", "concatcss", "copy", "jshint"]);
 	
 	grunt.registerTask("concatcss", function() {
@@ -81,21 +75,6 @@ module.exports = function(grunt) {
 		grunt.task.run("concat");
 	});
 	
-	
-	grunt.registerTask("downloadFiles", function() {
-		var done = this.async();
-		var dist = grunt.config("getFile").dist;
-		var dir = dist.dest;
-		var http = require("https");
-		var fs = require("fs");
-		var writeStream = fs.createWriteStream(dist.dest + "/" + dist.name); 
-		var request = http.get(dist.resource, function(e) {
-			e.pipe(writeStream);
-			e.on("end", function(a) {
-				console.log(dist.name + "-----" + " complete");
-			});
-		});
-	});
 	
 	
 };
