@@ -1,0 +1,2894 @@
+var aneurysmdata=[
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 11
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal AC",
+   "Size of Aneurysm 1": 1
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "BA SCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal AC",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": 2.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Choroidal",
+   "Size of Aneurysm 1": 3.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 7
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Distal AICA",
+   "Size of Aneurysm 1": 6.8
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Distal AC",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 12
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 4.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Pericallosal",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": 7.1
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal AC",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": 17
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Vertebral Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Paraclinoid",
+   "Size of Aneurysm 1": 4.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 8
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 9
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 3.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal PCA",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 5.3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal PICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Cave",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 3.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 4.5
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 4.7
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal AC",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 2.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Pericallosal",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Complex",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Basilar Truck",
+   "Size of Aneurysm 1": 11
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": 22
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": 8
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 2.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "BA SCA",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 16
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Paraclinoid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 2.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Distal PCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Vertebral Artery",
+   "Size of Aneurysm 1": 13
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": 1.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Paraclinoid",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 1.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Cave",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 7
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Cave",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": 9
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 9
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "BA SCA",
+   "Size of Aneurysm 1": 3.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "BA SCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 2.6
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 11
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "PICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Choroidal",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Supraclinoid",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 4.4
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Vertebral Artery",
+   "Size of Aneurysm 1": 7
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "PICA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 3.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": 2.3
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal PICA",
+   "Size of Aneurysm 1": 2.9
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Supraclinoid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Dissection",
+   "Aneurysm 1 location": "Vertebral Artery",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Distal AC",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "PICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 10
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 2.1
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Basilar Truck",
+   "Size of Aneurysm 1": 28
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 10
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": 2.7
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 10
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 11
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal AC",
+   "Size of Aneurysm 1": 1.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": 7
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": 1.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 2.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 3.8
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Pericallosal",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 2.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Truck",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": 3.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal AC",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA Superior Hypophyseal Artery",
+   "Size of Aneurysm 1": 4.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Vertebral Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 1.5
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "PICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Vertebral Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Vertebral Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA Superior Hypophyseal Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 7
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 3.6
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 1.5
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Basilar Truck",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "BA SCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 7
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA Superior Hypophyseal Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Basilar Truck",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Supraclinoid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": 13
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 3.6
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Paraclinoid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Dissection",
+   "Aneurysm 1 location": "Distal PCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal AC",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 15
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 7
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 9
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Distal AICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 8
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 3.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "PICA",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 10
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 8
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA Superior Hypophyseal Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 7.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 8
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 7
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Choroidal",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Dissection",
+   "Aneurysm 1 location": "PICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "PICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 8
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Pericallosal",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 10
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "PICA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 4.5
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Distal AC",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Pericallosal",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Truck",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 7
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 8.5
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 7
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Pericallosal",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 10
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 9
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 9.9
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal AC",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 10
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Distal PICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal PICA",
+   "Size of Aneurysm 1": 5.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 11
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal PICA",
+   "Size of Aneurysm 1": 5.8
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 8
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 6.2
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 17
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 6.8
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 7
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 2.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 19
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 10
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Unknown",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Distal PCA",
+   "Size of Aneurysm 1": 10
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Distal AC",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal PICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 9
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 7
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Unknown",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 2.8
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 2.2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 10
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Distal PCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Distal PCA",
+   "Size of Aneurysm 1": 1.7
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Extra-Cranial: Internal Carotid",
+   "Size of Aneurysm 1": 7
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 9
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 8
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 8
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal PCA",
+   "Size of Aneurysm 1": 18
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA Superior Hypophyseal Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Choroidal",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Distal AC",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Distal PCA",
+   "Size of Aneurysm 1": 10
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Distal PCA",
+   "Size of Aneurysm 1": 7
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "BA SCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "BA SCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Supraclinoid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "BA SCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA Superior Hypophyseal Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Supraclinoid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Supraclinoid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA Superior Hypophyseal Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA Superior Hypophyseal Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "BA SCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA Superior Hypophyseal Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "PICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Distal AC",
+   "Size of Aneurysm 1": 4
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 3
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "PICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Dissection",
+   "Aneurysm 1 location": "Vertebral Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Distal PCA",
+   "Size of Aneurysm 1": 6
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Vertebral Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Carotid Opthalmic",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Fusiform",
+   "Aneurysm 1 location": "Intraspinal: Cervical",
+   "Size of Aneurysm 1": 12
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": 17
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 24
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": 20
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Basilar Tip",
+   "Size of Aneurysm 1": 2.5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "ICA PCOM",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "MCA",
+   "Size of Aneurysm 1": 5
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Anterior Communicating Artery",
+   "Size of Aneurysm 1": null
+ },
+ {
+   "Status of aneurysm": "Un-Ruptured",
+   "Type of Aneurysm": "",
+   "Aneurysm 1 location": "Cavernous Carotid",
+   "Size of Aneurysm 1": 2
+ },
+ {
+   "Status of aneurysm": "Ruptured",
+   "Type of Aneurysm": "Saccular",
+   "Aneurysm 1 location": "PICA",
+   "Size of Aneurysm 1": 4
+ }
+]
