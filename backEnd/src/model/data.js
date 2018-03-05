@@ -19,8 +19,28 @@ function initData(srcDir) {
 		});
 	});
 };
+
+//returns all of the data
 function getAllData() {
 	return data;
+};
+
+//names - an array with the names of the data sources - result is condensed 
+function getDataBySourceByName(names) {
+	var result = {};
+	for (var k = 0; k < names.length; k++) {
+		debugger;
+	}
+};
+
+//returns an array with the names of all of the data source names
+function getDataSourceNames() {
+	var result = [];
+	for (var k in data) {
+		result.append(k["name"]);
+	}
+	
+	return result;
 };
 
 module.exports = {initData, getAllData};

@@ -10,5 +10,17 @@ router.get("/data/getAll", function(req, res) {
 	res.end(JSON.stringify(packet), "utf-8");
 });
 
+router.get("/data/getDataSources", function(req, res){
+	var packet = dataModel.getDataSourceNames();
+	res.writeHead(200, {"Content-Type": "text/plain"});
+	res.end(JSON.stringify(packet), "utf-8");
+});
+
+router.get("/data/getDataSources/:name", function(req, res){
+	//var packet = dataModel.getDataSourceNames();
+	//res.writeHead(200, {"Content-Type": "text/plain"});
+	//res.end(JSON.stringify(packet), "utf-8");
+});
+
 
 module.exports = router;

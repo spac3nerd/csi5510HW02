@@ -23,7 +23,11 @@ module.exports = function(grunt) {
 			},
 			dist: {
 				src: [
-					"highcharts.js"
+					"lib/jquery.js",
+					"lib/highcharts.js",
+					"lib/jquery.dataTables.min.js",
+					"src/hw02.js",
+					"src/service/service.js"
 				],
 				dest: dest + "hw02.js"
 			}
@@ -74,7 +78,4 @@ module.exports = function(grunt) {
 		})
 		grunt.task.run("concat");
 	});
-	
-	
-	
 };
