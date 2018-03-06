@@ -1,7 +1,9 @@
 var hw02 = function() {
 	
 	
-	this.init = function() {
-		console.log("init");
+	this.initQuery = function(targetElem) {
+		var queryController = new hw02.controller.query();
+		queryController.init(targetElem);
+		return queryController;
 	};
 };

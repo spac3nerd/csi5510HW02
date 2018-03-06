@@ -27,7 +27,8 @@ module.exports = function(grunt) {
 					"lib/highcharts.js",
 					"lib/jquery.dataTables.min.js",
 					"src/hw02.js",
-					"src/service/service.js"
+					"src/service/service.js",
+					"src/controller/query.js"
 				],
 				dest: dest + "hw02.js"
 			}

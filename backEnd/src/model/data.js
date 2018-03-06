@@ -29,18 +29,21 @@ function getAllData() {
 function getDataBySourceByName(names) {
 	var result = {};
 	for (var k = 0; k < names.length; k++) {
-		debugger;
-	}
-};
-
-//returns an array with the names of all of the data source names
-function getDataSourceNames() {
-	var result = [];
-	for (var k in data) {
-		result.append(k["name"]);
+		result.push(k)
 	}
 	
 	return result;
 };
 
-module.exports = {initData, getAllData};
+//returns an array with the names of all of the data source names
+function getDataSourceNames() {
+	var result = [];
+	debugger;
+	for (var k in data) {
+		result.push(data[k].name);
+	}
+	
+	return result;
+};
+
+module.exports = {initData, getAllData, getDataSourceNames};
