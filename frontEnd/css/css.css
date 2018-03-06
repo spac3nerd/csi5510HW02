@@ -1,3 +1,17 @@
 .mainContainer {
 	width: 100%;
 }
+.headerContainer {
+	font-size: 20px;
+	text-align: center;
+}
+.radioContainer {
+	text-align: center;
+	height: 50px;
+}
+.tableContainer {
+
+}
+.centeredDiv {
+	text-align: center;
+}

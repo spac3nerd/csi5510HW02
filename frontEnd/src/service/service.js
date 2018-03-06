@@ -14,11 +14,11 @@ hw02.service = function() {
 		});
 	};
 	
-	this.getAllData = function(data, callback) {
-		this._req("/data/getAll", "GET", data, callback, context);
+	this.getAllData = function(data, callback, context) {
+		this._req("data/getAll", "GET", data, callback, context);
 	};
-    this.getDataSourceByName = function(data, callback) {
-        this._req("/data/getDataSources", "GET", data, callback, context);
+    this.getDataSourcesByName = function(data, callback, context) {
+        this._req("data/getDataSources", "GET", data, callback, context);
     };
 	
 };
