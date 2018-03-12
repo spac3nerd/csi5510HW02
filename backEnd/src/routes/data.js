@@ -19,9 +19,9 @@ router.get("/data/getDataSources", function(req, res){
 	}), "utf-8");
 });
 
-router.get("/data/getDataSourcesByName/", function(req, res){
+router.post("/data/getDataSourcesByName/", function(req, res){
 	if (req.headers.sources) {
-        var packet = dataModel.getDataBySourceByName(req.headers.sources);
+        var packet = dataModel.getDataSourceByName(req.headers.sources, req.body.options);
         res.writeHead(200, {"Content-Type": "text/plain"});
         res.end(JSON.stringify({
 			success: true,

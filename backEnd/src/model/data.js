@@ -46,17 +46,42 @@ function getAllData() {
 };
 
 //names - an array with the names of the data sources - result is condensed 
-function getDataBySourceByName(names) {
+function getDataSourceByName(names, options) {
 	names = names.split(",");
 	var cols = _getCols();
 	var result = {
 		cols: cols,
 		data: []
 	};
-	for (var k = 0; k < names.length; k++) {
-		result.data = result.data.concat(JSON.parse(data[names[k]].content));
-	}
-	
+    if (!(options.excludeNull) && !(options.excludeEmptyStr)) {
+        for (var k = 0; k < names.length; k++) {
+            result.data = result.data.concat(JSON.parse(data[names[k]].content));
+        }
+    }
+    else {
+    	var currentData, skip;
+        for (var k = 0; k < names.length; k++) {
+             currentData = (JSON.parse(data[names[k]].content));
+             for (var n = 0; n < currentData.length; n++) {
+             	skip = false;
+             	for (var j in currentData[n]){
+             		if (options.excludeNull) {
+             			if (currentData[n][j] === null) {
+             				skip = true;
+						}
+					}
+					if (options.excludeEmptyStr) {
+                        if (currentData[n][j] === "") {
+                            skip = true;
+                        }
+					}
+				}
+				if (!skip){
+             		result.data.push(currentData[n]);
+				}
+             }
+        }
+    }
 	return result;
 };
 
@@ -70,4 +95,4 @@ function getDataSourceNames() {
 	return result;
 };
 
-module.exports = {initData, getAllData, getDataSourceNames, getDataBySourceByName};
+module.exports = {initData, getAllData, getDataSourceNames, getDataSourceByName};

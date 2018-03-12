@@ -8,11 +8,21 @@
 	<body>
 		<div id="mainContainer" class="mainContainer">
 			<div class="headerContainer">
-				Query Data
+				Query Data Set
 			</div>
 			<div class="radioContainer" id="radioContainer">
 
 			</div>
+			<div class="headerContainer">
+				Query Options
+			</div>
+			<div class="radioContainer" id="optionContainer">
+				<label>
+					<input unchecked type="checkbox" id="excludeNull"/>Exclude Null
+					<input unchecked type="checkbox" id="excludeEmptyStr"/>Exclude Empty String
+				</label>
+			</div>
+
 			<div class="centeredDiv">
 				<input id="queryBtn" type="button" value="Run"/>
 			</div>

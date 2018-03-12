@@ -20,6 +20,7 @@ hw02.controller.query = function(targetElem) {
 		}, this);
     };
 
+	//retrieves all of the checked data sources
 	this._getCheckedItems = function() {
 		var result = [];
         var radioContainer = $("#radioContainer");
@@ -32,6 +33,7 @@ hw02.controller.query = function(targetElem) {
 		return result;
 	};
 
+	//add event handlers to needed controls
 	this._addEventHandlers = function() {
 		var runBtn = $("#queryBtn");
 		var that = this;
@@ -40,18 +42,27 @@ hw02.controller.query = function(targetElem) {
 		});
 	};
 
+	//load new data into the existing table
 	this._reloadTable = function() {
-        this._service.getData({
-            sources: this._getCheckedItems()
-        }, function(response){
-            if (response.success) {
-                this._dataTable.clear();
-                this._dataTable.rows.add(response.data.data);
-                this._dataTable.draw();
-            }
-            else {
-                alert(response.message);
-            }
+        this._service.getData(
+            {
+                options: {
+                    excludeNull: document.getElementById("excludeNull").checked || false,
+                    excludeEmptyStr: document.getElementById("excludeEmptyStr").checked || false
+                }
+            },
+        	{
+            	sources: this._getCheckedItems()
+			},
+			function(response){
+				if (response.success) {
+					this._dataTable.clear();
+					this._dataTable.rows.add(response.data.data);
+					this._dataTable.draw();
+				}
+				else {
+					alert(response.message);
+				}
         }, this);
 	};
 
@@ -67,11 +78,18 @@ hw02.controller.query = function(targetElem) {
 		return result;
 	};
 
+	//generates the table with the initial data set
 	this._generateTable = function() {
 		var that = this;
-        this._service.getData({
-			sources: this._getCheckedItems()
-		}, function(response){
+        this._service.getData(            {
+                options: {
+                    excludeNull: document.getElementById("excludeNull").checked || false,
+                    excludeEmptyStr: document.getElementById("excludeEmptyStr").checked || false
+                }
+            },
+            {
+                sources: this._getCheckedItems()
+            }, function(response){
         	if (response.success) {
                 this._dataTable = $("#queryTable").DataTable({
                     paging: true,
