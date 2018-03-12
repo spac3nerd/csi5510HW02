@@ -16,7 +16,18 @@ module.exports = function(grunt) {
 				"src/**/*.js"
 			]
 		},
-		
+        copyImages: {
+            main: {
+                files: [
+                    {
+                        expand: true,
+                        flatten: true,
+                        src: ["css/images/**.*"],
+                        dest: dest + "images"
+                    }
+                ]
+            }
+        },
 		concat: {
 			options: {
 				separator: "\n"
@@ -66,7 +77,7 @@ module.exports = function(grunt) {
 	
 	grunt.registerTask("default", ["debug"]);
 	grunt.registerTask("init", ["downloadFiles"]);
-	grunt.registerTask("debug", ["concat", "concatcss", "copy", "jshint"]);
+	grunt.registerTask("debug", ["concat", "concatcss", "copy", "copyImages", "jshint"]);
 	
 	grunt.registerTask("concatcss", function() {
 		var task = grunt.config("concatcss");
@@ -79,4 +90,12 @@ module.exports = function(grunt) {
 		})
 		grunt.task.run("concat");
 	});
+    grunt.registerTask("copyImages", function() {
+        var task = grunt.config("copyImages");
+
+        grunt.config.set("copy", {
+            main: task.main
+        });
+        grunt.task.run("copy");
+    });
 };
