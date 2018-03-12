@@ -110,7 +110,7 @@ function groupDataByDimension(names, dimension, options) {
 			key = "Not defined";
 		}
 		if (key === null) {
-			key = 0;
+			continue;
 		}
 		if (result["data"].hasOwnProperty(key)) {
 			result["data"][key] = result["data"][key] + 1

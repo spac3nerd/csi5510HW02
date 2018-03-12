@@ -113,91 +113,90 @@ hw02.controller.query = function(targetElem) {
             }, function(response){
                 if (response.success) {
                 	//group by dim 2
-                    this._service.groupDataByDimension({
-						dimension: response.data[1],
-						options: {
-							excludeNull: false,
-							exlcluedEmptyStr: false
-						}
-					},{
-                    	sources: dataSources
-					},function(response){
-                    	if (response.success){
-							var chartContainer = document.getElementById("chartContainer");
-							var chartElem = document.createElement("div");
-							chartElem.className = "chartElem";
-							chartElem.id = response.data.dimension;
-							chartContainer.appendChild(chartElem);
-							console.log(response.data);
-							//format the data so highcharts can use it
-							var categories = [];
-                            var data = [{
-                            	name: "Count",
-								data: []
-							}];
-							for (var k in response.data.data) {
-								categories.push(k);
-								data[0].data.push(response.data.data[k]);
-							}
+					for (var n = 0; n < response.data.length; n++) {
+                        this._service.groupDataByDimension({
+                            dimension: response.data[n],
+                            options: {
+                                excludeNull: false,
+                                exlcluedEmptyStr: false
+                            }
+                        }, {
+                            sources: dataSources
+                        }, function (response) {
+                            if (response.success) {
+                                var chartContainer = document.getElementById("chartContainer");
+                                var chartElem = document.createElement("div");
+                                chartElem.className = "chartElem";
+                                chartElem.id = response.data.dimension;
+                                chartContainer.appendChild(chartElem);
+                                console.log(response.data);
+                                //format the data so highcharts can use it
+                                var categories = [];
+                                var data = [{
+                                    name: "Count",
+                                    data: []
+                                }];
+                                for (var k in response.data.data) {
+                                    categories.push(k);
+                                    data[0].data.push(response.data.data[k]);
+                                }
 
-
-							console.log(categories);
-							console.log(data);
-							//init highcharts
-                            Highcharts.chart(response.data.dimension, {
-                                chart: {
-                                    type: 'bar'
-                                },
-                                title: {
-                                    text: "Count of " + response.data.dimension
-                                },
-                                xAxis: {
-                                    categories: categories,
-                                    title: {
-                                        text: null
-                                    }
-                                },
-                                yAxis: {
-                                    min: 0,
-                                    title: {
-                                        text: "count",
-                                        align: "high"
+                                //init highcharts
+                                Highcharts.chart(response.data.dimension, {
+                                    chart: {
+                                        type: 'bar'
                                     },
-                                    labels: {
-                                        overflow: 'justify'
-                                    }
-                                },
-                                tooltip: {
-                                    valueSuffix: "Count"
-                                },
-                                plotOptions: {
-                                    bar: {
-                                        dataLabels: {
-                                            enabled: true
+                                    title: {
+                                        text: response.data.dimension
+                                    },
+                                    xAxis: {
+                                        categories: categories,
+                                        title: {
+                                            text: null
                                         }
-                                    }
-                                },
-                                legend: {
-                                    layout: 'vertical',
-                                    align: 'right',
-                                    verticalAlign: 'top',
-                                    x: -40,
-                                    y: 80,
-                                    floating: true,
-                                    borderWidth: 1,
-                                    backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
-                                    shadow: true
-                                },
-                                credits: {
-                                    enabled: false
-                                },
-                                series: data
-                            });
-						}
-						else {
-                            console.log(response.message);
-						}
-					}, this);
+                                    },
+                                    yAxis: {
+                                        min: 0,
+                                        title: {
+                                            text: "count",
+                                            align: "high"
+                                        },
+                                        labels: {
+                                            overflow: 'justify'
+                                        }
+                                    },
+                                    tooltip: {
+                                        valueSuffix: "Count"
+                                    },
+                                    plotOptions: {
+                                        bar: {
+                                            dataLabels: {
+                                                enabled: true
+                                            }
+                                        }
+                                    },
+                                    legend: {
+                                        layout: 'vertical',
+                                        align: 'right',
+                                        verticalAlign: 'top',
+                                        x: -40,
+                                        y: 80,
+                                        floating: true,
+                                        borderWidth: 1,
+                                        backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+                                        shadow: true
+                                    },
+                                    credits: {
+                                        enabled: false
+                                    },
+                                    series: data
+                                });
+                            }
+                            else {
+                                alert(response.message);
+                            }
+                        }, this);
+                    }
                 }
                 else {
                     alert(response.message);
