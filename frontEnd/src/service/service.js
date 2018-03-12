@@ -1,9 +1,10 @@
 hw02.service = function() {
 	
-	this._req = function(route, type, data, callback, context) {
+	this._req = function(route, type, data, headers, callback, context) {
 		$.ajax({
 			url: document.URL + route,
 			type: type,
+			headers: headers || {},
 			contentType: "application/json",
 			dataType: "json",
 			data: JSON.stringify(data)
@@ -15,10 +16,13 @@ hw02.service = function() {
 	};
 	
 	this.getAllData = function(data, callback, context) {
-		this._req("data/getAll", "GET", data, callback, context);
+		this._req("data/getAll", "GET", data, {}, callback, context);
 	};
-    this.getDataSourcesByName = function(data, callback, context) {
-        this._req("data/getDataSources", "GET", data, callback, context);
+    this.getDataSourcesName = function(data, callback, context) {
+        this._req("data/getDataSources", "GET", undefined, data, callback, context);
+    };
+    this.getData = function(data, callback, context) {
+        this._req("data/getDataSourcesByName/", "GET", undefined, data, callback, context);
     };
 	
 };

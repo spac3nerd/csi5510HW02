@@ -13,23 +13,48 @@ function initData(srcDir) {
 		allFiles.forEach(function(f, i) {
 			data[f.split(".")[0]] = {
 				name: f.split(".").slice(0, -1).join("."),
-				content: fs.readFileSync(srcDir + "/" + f, "utf8"),
-				annotations: []
+				content: fs.readFileSync(srcDir + "/" + f, "utf8")
 			};
 		});
 	});
 };
 
+//not a very robust function, it relies on the assumption that all data sources have the same columns
+function _getCols() {
+	for (var k in data) {
+		var parsed = JSON.parse(data[k].content);
+		var cols = [];
+		for (var i = 0; i < parsed.length; i++) {
+			for (var n in parsed[i]) {
+				cols.push(n);
+			}
+			return cols;
+		}
+	}
+};
+
 //returns all of the data
 function getAllData() {
-	return data;
+	var result = {
+		cols: _getCols(),
+		data: []
+	};
+	for (var k in data) {
+		result.data = result.data.concat(JSON.parse(data[k].content));
+	}
+	return result;
 };
 
 //names - an array with the names of the data sources - result is condensed 
 function getDataBySourceByName(names) {
-	var result = {};
+	names = names.split(",");
+	var cols = _getCols();
+	var result = {
+		cols: cols,
+		data: []
+	};
 	for (var k = 0; k < names.length; k++) {
-		result.push(k)
+		result.data = result.data.concat(JSON.parse(data[names[k]].content));
 	}
 	
 	return result;
@@ -38,7 +63,6 @@ function getDataBySourceByName(names) {
 //returns an array with the names of all of the data source names
 function getDataSourceNames() {
 	var result = [];
-	debugger;
 	for (var k in data) {
 		result.push(data[k].name);
 	}
@@ -46,4 +70,4 @@ function getDataSourceNames() {
 	return result;
 };
 
-module.exports = {initData, getAllData, getDataSourceNames};
+module.exports = {initData, getAllData, getDataSourceNames, getDataBySourceByName};
