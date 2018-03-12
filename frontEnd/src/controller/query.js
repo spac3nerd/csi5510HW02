@@ -10,7 +10,7 @@ hw02.controller.query = function(targetElem) {
 				this._sourceNames = response.data;
 				var radioContainer = $("#radioContainer");
                 for (var k = 0; k < response.data.length; k++) {
-					radioContainer[0].innerHTML = radioContainer[0].innerHTML + "<label><input checked type=\"checkbox\" id=" + response.data[k] +"CheckBox>" + response.data[k] + "</label>";
+					radioContainer[0].innerHTML = radioContainer[0].innerHTML + "<label><input checked class='regular-radio' type=\"checkbox\" id=" + response.data[k] +"CheckBox>" + response.data[k] + "</label>";
                 }
                 this._generateTable();
             }
