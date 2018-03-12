@@ -38,5 +38,43 @@ router.post("/data/getDataSourcesByName/", function(req, res){
 
 });
 
+//returns the dimensions in the data set
+router.get("/data/getDataDimensions/", function(req, res){
+	var packet = dataModel.getCols();
+	res.writeHead(200, {"Content-Type": "text/plain"});
+	res.end(JSON.stringify({
+		success: true,
+		data: packet
+	}), "utf-8");
+});
+
+//returns a data set that is grouped by a given dimension
+router.post("/data/groupDataByDimension/", function(req, res){
+    if (req.headers.sources) {
+    	if (req.body.dimension) {
+            var packet = dataModel.groupDataByDimension(req.headers.sources, req.body.dimension, req.body.options || {});
+            res.writeHead(200, {"Content-Type": "text/plain"});
+            res.end(JSON.stringify({
+                success: true,
+                data: packet
+            }), "utf-8");
+        }
+        else {
+            res.writeHead(200, {"Content-Type": "text/plain"});
+            res.end(JSON.stringify({
+                success: false,
+                message: "No dimension given to group by"
+            }), "utf-8");
+		}
+    }
+    else {
+        res.writeHead(200, {"Content-Type": "text/plain"});
+        res.end(JSON.stringify({
+            success: false,
+            message: "Sources not found in header"
+        }), "utf-8");
+    }
+});
+
 
 module.exports = router;

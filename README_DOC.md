@@ -42,7 +42,10 @@ The server exposes a REST API for requesting data in several ways:
 | --------|--------------------------|------------------------|-------------------|-------------------|
 | GET     |/data/getAll              | n/a                    | n/a               |returns data from all sources  |
 | GET     |/data/getDataSources      | n/a                    | n/a               |returns a list of available data source names  |
+| GET     |/data/getDataDimensions      | n/a                    | n/a               |returns a list of all data dimensions  |
 | POST    |/data/getDataSourcesByName| 'sources': <br> A comma-separated string of names of data sources to use. E.g "DMC, HenryFord" | 'options':<br> { "excludeNull": bool, "excludeEmptyStr": bool } |returns data *only* from the data sets in *sources*, and prunes data according to the *options* set  |
+| POST     |/data/groupDataByDim      | n/a                    | n/a               |returns a a data set that is grouped by a given dimension  |
+
 
 ### Server 
 

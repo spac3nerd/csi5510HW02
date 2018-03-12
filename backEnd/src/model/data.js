@@ -20,7 +20,7 @@ function initData(srcDir) {
 };
 
 //not a very robust function, it relies on the assumption that all data sources have the same columns
-function _getCols() {
+function getCols() {
 	for (var k in data) {
 		var parsed = JSON.parse(data[k].content);
 		var cols = [];
@@ -36,7 +36,7 @@ function _getCols() {
 //returns all of the data
 function getAllData() {
 	var result = {
-		cols: _getCols(),
+		cols: getCols(),
 		data: []
 	};
 	for (var k in data) {
@@ -48,7 +48,7 @@ function getAllData() {
 //names - an array with the names of the data sources - result is condensed 
 function getDataSourceByName(names, options) {
 	names = names.split(",");
-	var cols = _getCols();
+	var cols = getCols();
 	var result = {
 		cols: cols,
 		data: []
@@ -95,4 +95,31 @@ function getDataSourceNames() {
 	return result;
 };
 
-module.exports = {initData, getAllData, getDataSourceNames, getDataSourceByName};
+function groupDataByDimension(names, dimension, options) {
+	var data = this.getDataSourceByName(names, options).data;
+	var result = {
+		"data": {},
+		"dimension": dimension
+	};
+	//result[dimension] = {};
+	//result["dimension"] = dimension; //makes it easier to retrieve the grouped Dim from the response
+
+	for (var k = 0; k < data.length; k++) {
+		var key = data[k][dimension];
+		if (key === "") {
+			key = "Not defined";
+		}
+		if (key === null) {
+			key = 0;
+		}
+		if (result["data"].hasOwnProperty(key)) {
+			result["data"][key] = result["data"][key] + 1
+		}
+		else {
+            result["data"][key] = 1;
+		}
+	}
+	return result;
+};
+
+module.exports = {initData, getAllData, getDataSourceNames, getDataSourceByName, getCols, groupDataByDimension};

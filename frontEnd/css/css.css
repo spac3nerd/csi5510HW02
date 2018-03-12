@@ -90,3 +90,11 @@ input[type="checkbox"]{
 	border: 1px solid #adb8c0;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1), inset 0px 0px 10px rgba(0,0,0,0.1);
 }
+
+.chartElem {
+	min-width: 300px;
+	max-width: 800px;
+	height: 400px;
+	margin: 0 auto;
+}
+

@@ -24,5 +24,11 @@ hw02.service = function() {
     this.getData = function(data, headers, callback, context) {
         this._req("data/getDataSourcesByName/", "POST", data, headers, callback, context);
     };
+    this.getDataDimensions = function(data, headers, callback, context) {
+        this._req("data/getDataDimensions/", "GET", data, headers, callback, context);
+    };
+    this.groupDataByDimension = function(data, headers, callback, context) {
+        this._req("data/groupDataByDimension/", "POST", data, headers, callback, context);
+    };
 	
 };
