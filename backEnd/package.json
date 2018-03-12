@@ -6,5 +6,8 @@
 		"express": "~4.16.0",
 		"body-parser": "~1.18.2",
 		"bcrypt": "~1.0.3"
+	},
+	"dependencies": {
+		"js-regression": "^1.0.10"
 	}
 }

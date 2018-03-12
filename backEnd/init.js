@@ -13,8 +13,16 @@ var serverOptions = {
 global.baseURL = "http://localhost" + ":" + serverOptions.httpPort;
 
 function init() {
-	dataModel.initData(serverOptions.dataSrc);
-	console.log(dataModel.getAllData());
+	dataModel.initData(serverOptions.dataSrc, function(data){
+        var trainingData = dataModel.getDataSourceByName('DMC,HenryFordDataset,Beaumontdataset', {excludeNull: true, excludeEmptyStr: true});
+        var testingData = dataModel.getDataSourceByName('HenryFordDataset',{excludeNull: true, excludeEmptyStr: true});
+
+        dataModel.trainRegression(trainingData);
+        dataModel.testRegression(testingData);
+	});
 	server = new webAppServer(serverOptions);
+
+
+
 };
 init();
