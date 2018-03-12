@@ -10,14 +10,12 @@ var classifier = new jsregression.LinearRegression({
 
 //Initialize the in-memory data structure for every given json file in backEnd/data
 function initData(srcDir, onComplete) {
-	console.log("Initing data...");
 	fs.readdir(srcDir, function(err, allFiles) {
 		if (err) {
 			console.error(srcDir + " is empty");
 			process.exit();
 		}
 		allFiles.forEach(function(f, i) {
-			console.log("Saw:" + f);
 			data[f.split(".")[0]] = {
 				name: f.split(".").slice(0, -1).join("."),
 				content: fs.readFileSync(srcDir + "/" + f, "utf8")
@@ -33,7 +31,7 @@ function initData(srcDir, onComplete) {
 };
 
 //not a very robust function, it relies on the assumption that all data sources have the same columns
-function _getCols() {
+function getCols() {
 	for (var k in data) {
 		var parsed = JSON.parse(data[k].content);
 		var cols = [];
@@ -53,7 +51,6 @@ function getAllData() {
 		data: []
 	};
 	for (var k in data) {
-		console.log(data[k].content);
 		result.data = result.data.concat(JSON.parse(data[k].content));
 	}
 	return result;
@@ -124,10 +121,10 @@ function testRegression(jsonData){
 		console.log("Actual: " + actual + " Predicted:" + predicted);
     }
 };
-//names - an array with the names of the data sources - result is condensed 
+//names - an array with the names of the data sources - result is condensed
 function getDataSourceByName(names, options) {
 	names = names.split(",");
-	var cols = _getCols();
+	var cols = getCols();
 	var result = {
 		cols: cols,
 		data: []
@@ -174,4 +171,40 @@ function getDataSourceNames() {
 	return result;
 };
 
-module.exports = {initData, getAllData, getDataSourceNames, getDataSourceByName, trainRegression, testRegression};
+function groupDataByDimension(names, dimension, options) {
+	var data = this.getDataSourceByName(names, options).data;
+	var result = {
+		"data": {},
+		"dimension": dimension
+	};
+	//result[dimension] = {};
+	//result["dimension"] = dimension; //makes it easier to retrieve the grouped Dim from the response
+
+	for (var k = 0; k < data.length; k++) {
+		var key = data[k][dimension];
+		if (key === "") {
+			key = "Not defined";
+		}
+		if (key === null) {
+			continue;
+		}
+		if (result["data"].hasOwnProperty(key)) {
+			result["data"][key] = result["data"][key] + 1
+		}
+		else {
+            result["data"][key] = 1;
+		}
+	}
+	return result;
+};
+
+module.exports = {
+    initData,
+    getAllData,
+    getDataSourceNames,
+    getDataSourceByName,
+    getCols,
+    groupDataByDimension,
+    testRegression,
+    trainRegression
+};
