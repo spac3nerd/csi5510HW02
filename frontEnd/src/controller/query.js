@@ -40,6 +40,39 @@ hw02.controller.query = function(targetElem) {
 		runBtn.on("click", function(e) {
 			that._reloadTable();
 		});
+
+        var caseBtn = $("#submitCase");
+        caseBtn.on("click", function(e) {
+            var type = document.getElementById("caseType").value;
+            var location = document.getElementById("caseLocation").value;
+            var size = document.getElementById("caseSize").value;
+            if ((type === "") && (location === "") && (size === "")) {
+                alert("Incomplete fields");
+            }
+            else {
+                that._service.predictCase({
+                    case: {
+                        "Type of Aneurysm": type,
+                        "Aneurysm 1 location": location,
+                        "Size of Aneurysm 1": size
+                    }
+                }, {}, function(response) {
+                    if (response.success) {
+                        if (response.data.ruptured > 0.5) {
+                            alert("Case is likely to be Ruptured. Certainty of " + response.data.ruptured);
+                        }
+                        else {
+                            alert("Case is likely to be Un-Ruptured. Certainty of " + response.data.unruptured);
+                        }
+                    }
+                    else {
+                        alert(response.message);
+                    }
+                }, this);
+            }
+
+        });
+
 	};
 
 	//load new data into the existing table
@@ -147,7 +180,7 @@ hw02.controller.query = function(targetElem) {
                                         type: 'bar'
                                     },
                                     title: {
-                                        text: response.data.dimension
+                                        text: "Grouped by " + response.data.dimension
                                     },
                                     xAxis: {
                                         categories: categories,

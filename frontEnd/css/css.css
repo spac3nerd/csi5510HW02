@@ -98,3 +98,7 @@ input[type="checkbox"]{
 	margin: 0 auto;
 }
 
+.centeredContainer {
+	text-align: center;
+}
+

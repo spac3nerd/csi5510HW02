@@ -44,8 +44,8 @@ The server exposes a REST API for requesting data in several ways:
 | GET     |/data/getDataSources      | n/a                    | n/a               |returns a list of available data source names  |
 | GET     |/data/getDataDimensions      | n/a                    | n/a               |returns a list of all data dimensions  |
 | POST    |/data/getDataSourcesByName| 'sources': <br> A comma-separated string of names of data sources to use. E.g "DMC, HenryFord" | 'options':<br> { "excludeNull": bool, "excludeEmptyStr": bool } |returns data *only* from the data sets in *sources*, and prunes data according to the *options* set  |
-| POST     |/data/groupDataByDim      | n/a                    | n/a               |returns a a data set that is grouped by a given dimension  |
-
+| POST     |/data/groupDataByDim      | 'sources': <br> A comma-separated string of names of data sources to use. E.g "DMC, HenryFord" | 'dimension': <br> The dimension by which to group by |returns a a data set that is grouped by a given dimension  |
+| POST     |/data/predictCase     | n/a                    | 'case': <br> An object that contains the values for all of the headers in the data set except for status |returns the neural network's answer to whether or not a new case would be ruptured or un-ruptured  |
 
 ### Server 
 
@@ -57,6 +57,8 @@ on the client)
 amount of data going to the client. These capabilities are:
     * Show only data from selected data sources
     * Show only data with non-null and/or non-empty values
+
+* The server trains a neural network on the given dataset segments that are not null and do not have the empty string in a field, and uses it to predict the status of a new aneurysm
     
 ### Client
 
@@ -65,4 +67,6 @@ amount of data going to the client. These capabilities are:
 searching and pagination. 
 * The client has controls (radio buttons) to focus the scope of returned data (implemented by sending a new 
 request to the server).
-    * Some data-filtering options (search, # of results shown per page) are handled directly on the client
+* Some data-filtering options (search, # of results shown per page) are handled directly on the client
+* The client is able to display charts of the data being grouped by all of the data categories.
+* Given the correct information about a case(ie, using ), it can use a neural network to predict the Status of an aneurysm

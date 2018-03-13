@@ -30,5 +30,8 @@ hw02.service = function() {
     this.groupDataByDimension = function(data, headers, callback, context) {
         this._req("data/groupDataByDimension/", "POST", data, headers, callback, context);
     };
+    this.predictCase = function(data, headers, callback, context) {
+        this._req("data/predictCase", "POST", data, headers, callback, context);
+    };
 	
 };
