@@ -190,9 +190,7 @@ function transformToNNTestData(jsonData){
 function trainNN(jsonData){
 	var trainingData = transformToNNData(jsonData);
 	console.log("Training with " + trainingData.length + " nodes: " + JSON.stringify(trainingData));
-    net.train(trainingData, {
-    	//iterations: 25000
-	});
+    net.train(trainingData);
     console.log("training complete")
 }
 
@@ -228,7 +226,7 @@ function testSet(jsonData){
 			}
             console.log("Actual: " + actual + "       Predicted Ruptured:" + predicted.ruptured + "      Predicted Un-Ruptured:" + predicted.unruptured);
     }
-    console.log("It's correct " + correct/total + "% of the time");
+    console.log("It's correct " + ((correct/total) * 100) + "% of the time");
 }
 //names - an array with the names of the data sources - result is condensed
 function getDataSourceByName(names, options) {
