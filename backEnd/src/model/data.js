@@ -1,12 +1,52 @@
 var fs = require("fs");
 var crypto = require("crypto");
 var jsregression = require('js-regression');
+var brain = require("brainjs");
 var data = {}; //each property of this object corresponds to a data source
-var classifier = new jsregression.LinearRegression({
-    alpha: 0.001, //
-    iterations: 1000,
-    lambda: 0.0
-});
+var net = new brain.NeuralNetwork();
+
+var kinds = [
+	"Complex",
+    "Dissection",
+    "Distal",
+    "Fusiform",
+    "Saccular"
+];
+
+var status = [
+    "Ruptured",
+    "Un-Ruptured"
+];
+
+var locations = [ "Anterior Choroidal",
+    "Anterior Communicating Artery",
+    "BA AICA",
+    "BA SCA",
+    "Basilar Tip",
+    "Basilar Truck",
+    "Carotid Cave",
+    "Carotid Opthalmic",
+    "Cavernous Carotid",
+    "Distal AC",
+    "Distal AICA",
+    "Distal MCA",
+    "Distal PCA",
+    "Distal PICA",
+    "Distal SCA",
+    "Extra-Cranial: Internal Carotid",
+    "ICA PCOM",
+    "ICA Superior Hypophyseal Artery",
+    "ICA",
+    "Intraspinal: Cervical",
+    "Intraspinal: Thoracic",
+    "MCA",
+    "Paraclinoid",
+    "Pericallosal",
+    "PICA",
+    "Supraclinoid",
+    "Vertebral Artery",
+    "Vertebrobasilar Junction"
+];
 
 //Initialize the in-memory data structure for every given json file in backEnd/data
 function initData(srcDir, onComplete) {
@@ -22,13 +62,14 @@ function initData(srcDir, onComplete) {
 			};
 		});
         if(onComplete){
+        	//debugger;
             onComplete(data);
 		} else {
         	console.warn("onComplete of initData is null");
 		}
 
 	});
-};
+}
 
 //not a very robust function, it relies on the assumption that all data sources have the same columns
 function getCols() {
@@ -42,7 +83,7 @@ function getCols() {
 			return cols;
 		}
 	}
-};
+}
 
 //returns all of the data
 function getAllData() {
@@ -54,26 +95,29 @@ function getAllData() {
 		result.data = result.data.concat(JSON.parse(data[k].content));
 	}
 	return result;
-};
+}
+
+//min is assumed to be 0
+//val is the number to be normalized,
+//max is the max value in the original set
+function normalize(val, max) {
+    return (val / max);
+}
+
+//should be finding the max value, but due to time restraints, it has been hardcoded to the max of size of aneurysm
+function maxOfDim(set, dim) {
+	return 32.5;
+}
 
 function convertKind(kindStr){
-    var kinds = ['Saccular','Complex','Fusiform', 'Dissection', '', null];
-	var ret = kinds.indexOf(kindStr);
+	var ret = normalize(kinds.indexOf(kindStr), kinds.length);
 	if(ret === -1){
 		console.warn("Unhandled kind:" + kindStr);
 	}
 	return ret;
 }
 function convertLoc(locStr){
-    var locs = ['ICA Superior Hypophyseal Artery','ICA PCOM','Fusiform',
-		'MCA', 'Pericallosal', 'Distal AC', 'Anterior Communicating Artery' ,
-		'Carotid Opthalmic', 'Vertebral Artery', 'Basilar Tip', 'ICA', 'Anterior Choroidal',
-		'PICA', 'Supraclinoid', 'Carotid Cave', 'Cavernous Carotid', 'SCA', 'Paraclinoid',
-		'MCA', 'PCA', 'Vertebrobasilar Junction', 'Distal SCA', 'BA SCA', 'Distal MCA',
-		'PCA', 'Intraspinal: Cervical', 'Basilar Truck', 'BA AICA', 'Distal PICA', 'Distal PCA',
-		'Distal AICA',
-		'', null];
-    var ret = locs.indexOf(locStr);
+    var ret = normalize(locations.indexOf(locStr), locations.length);
     if(ret === -1){
         console.warn("Unhandled kind:" + locStr);
     }
@@ -81,46 +125,111 @@ function convertLoc(locStr){
 }
 
 function convertRuptured(ruptStr){
-    var vars = ['Un-Ruptured', 'Ruptured', 'Unknown', '', null];
-    var ret = vars.indexOf(ruptStr);
+    var ret = normalize(status.indexOf(ruptStr), status.length);
     if(ret === -1){
         console.warn("Unhandled kind:" + ruptStr);
     }
     return ret;
 }
 
-function transformToRegressionData(jsonData){
+function transformToNNData(jsonData){
     var data = [];
+    var maxSize = maxOfDim(jsonData, 'Size of Aneurysm 1');
+    var output;
     for(var d in jsonData.data) {
-        var node = {
-            kind: convertKind(jsonData.data[d]['Type of Aneurysm']),
-            loc: convertLoc(jsonData.data[d]['Aneurysm 1 location']),
-            size: jsonData.data[d]['Size of Aneurysm 1'],
-            status: convertRuptured(jsonData.data[d]['Status of aneurysm'])
-        }
-        //console.log( d + ": " + JSON.stringify(node));
-        data.push([ node.kind, node.loc, node.size, node.status]);
+    	//Keep the set of possible outcomes to two
+    	if (jsonData.data[d]['Status of aneurysm'] === "Unknown") {
+    		continue;
+		}
+        var input = {
+                a: convertKind(jsonData.data[d]['Type of Aneurysm']),
+                b: convertLoc(jsonData.data[d]['Aneurysm 1 location']),
+                c: normalize(jsonData.data[d]['Size of Aneurysm 1'], maxSize)
+            };
+    	if (convertRuptured(jsonData.data[d]['Status of aneurysm']) === 0) {
+            output = {
+                ruptured: 1
+            }
+		}
+		else {
+            output = {
+                unruptured: 1
+            }
+		}
+        data.push({
+        	"input": input,
+			"output": output
+		});
     }
     return data;
-};
+}
 
-function trainRegression(jsonData){
-	var trainingData = transformToRegressionData(jsonData);
-	console.log("Training with " + trainingData.length + " nodes: " + JSON.stringify(trainingData));
-    var result = classifier.fit(trainingData);
-    console.log(result);
-};
+function transformToNNTestData(jsonData){
+    var data = [];
+    var maxSize = maxOfDim(jsonData, 'Size of Aneurysm 1');
 
-function testRegression(jsonData){
-    var testingData = transformToRegressionData(jsonData);
-    console.log("Testing with " + testingData.length + " nodes: " + JSON.stringify(testingData));
+    for(var d in jsonData.data) {
+        //Keep the set of possible outcomes to two
+        if (jsonData.data[d]['Status of aneurysm'] === "Unknown") {
+            continue;
+        }
+        var input = {
+            a: convertKind(jsonData.data[d]['Type of Aneurysm']),
+            b: convertLoc(jsonData.data[d]['Aneurysm 1 location']),
+            c: normalize(jsonData.data[d]['Size of Aneurysm 1'], maxSize)
+        };
 
-    for(var i in testingData){
-		var actual = testingData[i][3];
-		var predicted = classifier.transform([testingData[i][0],testingData[i][1],testingData[i][2]]);
-		console.log("Actual: " + actual + " Predicted:" + predicted);
+        data.push({
+            "input": input,
+            "actual": jsonData.data[d]['Status of aneurysm']
+        });
     }
-};
+    return data;
+}
+
+function trainNN(jsonData){
+	var trainingData = transformToNNData(jsonData);
+	console.log("Training with " + trainingData.length + " nodes: " + JSON.stringify(trainingData));
+    net.train(trainingData, {
+    	//iterations: 25000
+	});
+    console.log("training complete")
+}
+
+function predictCase(data) {
+    var maxSize = maxOfDim(data, 'Size of Aneurysm 1');
+	var formattedData = {
+        a: convertKind(data['Type of Aneurysm']),
+        b: convertLoc(data['Aneurysm 1 location']),
+        c: normalize(data['Size of Aneurysm 1'], maxSize)
+	};
+
+	return net.run(formattedData);
+}
+
+function testSet(jsonData){
+    var testingData = transformToNNTestData(jsonData);
+    console.log("Testing with " + testingData.length + " nodes: " + JSON.stringify(testingData));
+    var correct = 0;
+    var total = 0;
+    for(var i in testingData){
+		var actual = testingData[i].actual;
+		var predicted = net.run(testingData[i].input);
+			if ((predicted.ruptured > 0.5) && (actual === "Ruptured")) {
+				correct++;
+				total++;
+			}
+			else if ((predicted.unruptured > 0.5) && (actual === "Un-Ruptured")) {
+                correct++;
+                total++;
+			}
+			else {
+				total++;
+			}
+            console.log("Actual: " + actual + "       Predicted Ruptured:" + predicted.ruptured + "      Predicted Un-Ruptured:" + predicted.unruptured);
+    }
+    console.log("It's correct " + correct/total + "% of the time");
+}
 //names - an array with the names of the data sources - result is condensed
 function getDataSourceByName(names, options) {
 	names = names.split(",");
@@ -159,7 +268,7 @@ function getDataSourceByName(names, options) {
         }
     }
 	return result;
-};
+}
 
 //returns an array with the names of all of the data source names
 function getDataSourceNames() {
@@ -169,7 +278,7 @@ function getDataSourceNames() {
 	}
 	
 	return result;
-};
+}
 
 function groupDataByDimension(names, dimension, options) {
 	var data = this.getDataSourceByName(names, options).data;
@@ -177,8 +286,6 @@ function groupDataByDimension(names, dimension, options) {
 		"data": {},
 		"dimension": dimension
 	};
-	//result[dimension] = {};
-	//result["dimension"] = dimension; //makes it easier to retrieve the grouped Dim from the response
 
 	for (var k = 0; k < data.length; k++) {
 		var key = data[k][dimension];
@@ -196,7 +303,7 @@ function groupDataByDimension(names, dimension, options) {
 		}
 	}
 	return result;
-};
+}
 
 module.exports = {
     initData,
@@ -205,6 +312,7 @@ module.exports = {
     getDataSourceByName,
     getCols,
     groupDataByDimension,
-    testRegression,
-    trainRegression
+    testSet,
+    trainNN,
+	predictCase
 };
