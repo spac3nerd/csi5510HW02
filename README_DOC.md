@@ -69,4 +69,4 @@ searching and pagination.
 request to the server).
 * Some data-filtering options (search, # of results shown per page) are handled directly on the client
 * The client is able to display charts of the data being grouped by all of the data categories.
-* Given the correct information about a case(ie, using ), it can use a neural network to predict the Status of an aneurysm
+* The client can take input from the user (type, location, size) and predict the status of an aneurysm, by invoking the server API. 
