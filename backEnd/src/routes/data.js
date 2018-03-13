@@ -35,7 +35,6 @@ router.post("/data/getDataSourcesByName/", function(req, res){
 			message: "sources not found in header"
 		}), "utf-8");
 	}
-
 });
 
 //returns the dimensions in the data set
@@ -74,6 +73,26 @@ router.post("/data/groupDataByDimension/", function(req, res){
             message: "Sources not found in header"
         }), "utf-8");
     }
+});
+
+router.post("/data/predictCase/", function(req, res){
+    var data = req.body.case;
+    if (data.hasOwnProperty("Type of Aneurysm") && data.hasOwnProperty("Size of Aneurysm 1") && data.hasOwnProperty("Aneurysm 1 location")){
+        var packet = dataModel.predictCase(req.body.case);
+        res.writeHead(200, {"Content-Type": "text/plain"});
+        res.end(JSON.stringify({
+            success: true,
+            data: packet
+        }), "utf-8");
+    }
+    else {
+        res.writeHead(200, {"Content-Type": "text/plain"});
+        res.end(JSON.stringify({
+            success: false,
+            message: "Case does not contain the correct data fields"
+        }), "utf-8");
+    }
+
 });
 
 
