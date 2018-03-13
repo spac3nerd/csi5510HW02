@@ -59,7 +59,7 @@ amount of data going to the client. These capabilities are:
     * Show only data with non-null and/or non-empty values
 
 * The server trains a neural network on the given dataset segments that are not null and do not have the empty string in a field, and uses it to predict the status of a new aneurysm
-    
+    * The results of this testing will be summarized in the console output of the server. We have seen ~72% correct predictions when 3 sets are used to train, and 1 sets is used to test. 
 ### Client
 
 * The client is an HTML webpage used for displaying the data and giving the user controls to manipulate the shown data.
