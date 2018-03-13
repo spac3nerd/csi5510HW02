@@ -48,7 +48,11 @@ var locations = [ "Anterior Choroidal",
     "Vertebrobasilar Junction"
 ];
 
-//Initialize the in-memory data structure for every given json file in backEnd/data
+/**
+ * Reads the given input directory and parses the contained files into data sets.
+ * @param srcDir The directory to process.
+ * @param onComplete A callback function to invoke when this async method is complete.
+ */
 function initData(srcDir, onComplete) {
 	fs.readdir(srcDir, function(err, allFiles) {
 		if (err) {
@@ -71,7 +75,11 @@ function initData(srcDir, onComplete) {
 	});
 }
 
-//not a very robust function, it relies on the assumption that all data sources have the same columns
+/**
+ * Determines the attributes of the data in the data set. This will become the column headers in the Data Table,
+ * and dimensions used by the Neural Network
+ * @returns {Array} An array of strings representing the attributes of a datum in the data set.
+ */
 function getCols() {
 	for (var k in data) {
 		var parsed = JSON.parse(data[k].content);
@@ -85,7 +93,11 @@ function getCols() {
 	}
 }
 
-//returns all of the data
+/**
+ * Returns the main data structure used by the client. This consists of an array of column headers, and another
+ * array of all the data caess
+ * @returns {{cols: *, data: Array}}
+ */
 function getAllData() {
 	var result = {
 		cols: _getCols(),
@@ -97,9 +109,12 @@ function getAllData() {
 	return result;
 }
 
-//min is assumed to be 0
-//val is the number to be normalized,
-//max is the max value in the original set
+/**
+ * Normalizes a value, such as the size of an aneurysm, to 0-1.
+ * @param val The value to normalize
+ * @param max The maximum number of possible values (determined elsewhere). Minimum is assumed 0.
+ * @returns {number} The normalized value
+ */
 function normalize(val, max) {
     return (val / max);
 }
@@ -109,6 +124,11 @@ function maxOfDim(set, dim) {
 	return 32.5;
 }
 
+/**
+ * Converts a string value for aneurysm type to a normalized value used by the NN
+ * @param kindStr String representing the attribute
+ * @returns {number} Normalized value for the given attribute category
+ */
 function convertKind(kindStr){
 	var ret = normalize(kinds.indexOf(kindStr), kinds.length);
 	if(ret === -1){
@@ -116,6 +136,12 @@ function convertKind(kindStr){
 	}
 	return ret;
 }
+
+/**
+ * Converts a string value for aneurysm location to a normalized value used by the NN
+ * @param kindStr String representing the attribute
+ * @returns {number} Normalized value for the given attribute category
+ */
 function convertLoc(locStr){
     var ret = normalize(locations.indexOf(locStr), locations.length);
     if(ret === -1){
@@ -124,6 +150,11 @@ function convertLoc(locStr){
     return ret;
 }
 
+/**
+ * Converts a string value for aneurysm status to a normalized value used by the NN
+ * @param kindStr String representing the attribute
+ * @returns {number} Normalized value for the given attribute category
+ */
 function convertRuptured(ruptStr){
     var ret = normalize(status.indexOf(ruptStr), status.length);
     if(ret === -1){
@@ -132,6 +163,13 @@ function convertRuptured(ruptStr){
     return ret;
 }
 
+/**
+ * Converts an array of data in the format of the input files into an array of objects used to train
+ * the Neural Network. The various attributes (type, location and size) become hidden nodes in the NN.
+ * Ruptured and Unruptured become outputs of the node.
+ * @param jsonData An array of JSON objects in the format of the data files.
+ * @returns {Array} An array of objects in the format used by the Neural Network
+ */
 function transformToNNData(jsonData){
     var data = [];
     var maxSize = maxOfDim(jsonData, 'Size of Aneurysm 1');
@@ -164,6 +202,12 @@ function transformToNNData(jsonData){
     return data;
 }
 
+/**
+ * Converts an array of data in the format of the input files into an array of objects used to test
+ * the Neural Network
+ * @param jsonData An array of JSON objects in the format of the data files.
+ * @returns {Array} An array of objects in the format used by the Neural Network
+ */
 function transformToNNTestData(jsonData){
     var data = [];
     var maxSize = maxOfDim(jsonData, 'Size of Aneurysm 1');
@@ -187,6 +231,11 @@ function transformToNNTestData(jsonData){
     return data;
 }
 
+/**
+ * Trains the Neural Network with the given data (in the format from the input files).
+ *
+ * @param jsonData An array of JSON objects in the format of the data files.
+ */
 function trainNN(jsonData){
 	var trainingData = transformToNNData(jsonData);
 	console.log("Training with " + trainingData.length + " nodes: " + JSON.stringify(trainingData));
@@ -194,6 +243,14 @@ function trainNN(jsonData){
     console.log("training complete")
 }
 
+/**
+ * Tests the Neural Network for the given aneurysm case. The case is expected to be in the format of the
+ * input files, and it is converted to the format expected by the Neural Network before being passed to the NN
+ * for testing.
+ * @param data A neural network case in the format from the input files.
+ * @returns a JSON-packed object in the form {"ruptured": <ruptured_val>,"unruptured": <unruptured_val>} where
+ *          the ruptured/unruptured vals are the 0-1 likelihood of applying to this case, as determined by the NN
+ */
 function predictCase(data) {
     var maxSize = maxOfDim(data, 'Size of Aneurysm 1');
 	var formattedData = {
@@ -205,6 +262,11 @@ function predictCase(data) {
 	return net.run(formattedData);
 }
 
+/**
+ * Run a whole array of datums from the input files through the NN for testing. Keep track of successes and
+ * failures for display purposes. Displays individual case predictions, as well as overall summary data.
+ * @param jsonData An array of JSON objects in the format of the data files.
+ */
 function testSet(jsonData){
     var testingData = transformToNNTestData(jsonData);
     console.log("Testing with " + testingData.length + " nodes: " + JSON.stringify(testingData));
@@ -228,7 +290,13 @@ function testSet(jsonData){
     }
     console.log("It's correct " + ((correct/total) * 100) + "% of the time");
 }
-//names - an array with the names of the data sources - result is condensed
+
+/**
+ * Filters the total data to only the data sets specified by *names*, and filtered with *options*.
+ * @param names A comma-separated string of the data set names to use.
+ * @param options A JSON object encoding filter options: {excludeNull: bool, excludeEmptyStr: bool}.
+ * @returns The data structure used on the client to display data in a tabular form.
+ */
 function getDataSourceByName(names, options) {
 	names = names.split(",");
 	var cols = getCols();
@@ -268,7 +336,10 @@ function getDataSourceByName(names, options) {
 	return result;
 }
 
-//returns an array with the names of all of the data source names
+/**
+ * Returns an array of the available data set names.
+ * @returns {Array} An array of strings representing the names of the available data sets.
+ */
 function getDataSourceNames() {
 	var result = [];
 	for (var k in data) {
@@ -278,6 +349,14 @@ function getDataSourceNames() {
 	return result;
 }
 
+/**
+ * Filters the data cases to only the data sets specified by *names*, and filtered with *options*, on the given
+ * dimension
+ * @param names A comma-separated string of the data set names to use.
+ * @param options A JSON object encoding filter options: {excludeNull: bool, excludeEmptyStr: bool}.
+ * @param dimension The name of a dimension to filter by
+ * @returns A data structure containing data used by the client charting functions
+ */
 function groupDataByDimension(names, dimension, options) {
 	var data = this.getDataSourceByName(names, options).data;
 	var result = {

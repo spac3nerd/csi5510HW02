@@ -2,8 +2,7 @@ var express = require("express");
 var router = express.Router();
 var dataModel = require("../model/data.js");
 
-
-//Retrieve all of the fragments
+//Retrieve all of the test cases
 router.get("/data/getAll", function(req, res) {
 	var packet = dataModel.getAllData();
 	res.writeHead(200, {"Content-Type": "text/plain"});
@@ -75,10 +74,12 @@ router.post("/data/groupDataByDimension/", function(req, res){
     }
 });
 
+//returns a prediction result from the Neural Network within the model for the given aneurysm case sample
 router.post("/data/predictCase/", function(req, res){
     var data = req.body.case;
     if (data.hasOwnProperty("Type of Aneurysm") && data.hasOwnProperty("Size of Aneurysm 1") && data.hasOwnProperty("Aneurysm 1 location")){
         var packet = dataModel.predictCase(req.body.case);
+        console.log(JSON.stringify(packet));
         res.writeHead(200, {"Content-Type": "text/plain"});
         res.end(JSON.stringify({
             success: true,
